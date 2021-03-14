@@ -1,0 +1,21 @@
+#include <cstdio>
+int main() {
+	
+	int SUM = 0;
+	for(int i = 1; i < 1000; ++i)
+	{
+		if(i % 3 == 0 || i%5 ==0) {
+			SUM = SUM + i;
+						
+		}
+		
+
+		else {
+			SUM = SUM;
+		}
+				
+	
+	}
+	printf("sum is %d \n", SUM);
+	return 0;
+}

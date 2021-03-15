@@ -1,0 +1,21 @@
+#include <cstdio>
+int main() {
+	int i = 1;
+	int j = 2;
+	int k;
+	int SUM = 0;
+	while(i<4000000){
+		k=i+j;
+		i=j;
+		j=k;		
+		if(i % 2 == 0) {
+			SUM = SUM + i;						
+		}
+		else {
+			SUM = SUM;
+		}
+		printf(" %d \n", i);			
+	}
+	printf("sum is %d \n", SUM);
+	return 0;
+}
